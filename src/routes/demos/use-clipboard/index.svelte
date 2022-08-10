@@ -21,25 +21,11 @@
 
 	const path: string =
 		'M13 20h2a3 3 0 0 1-6 0h2a1 1 0 0 0 2 0Zm8-5v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 .29-.71L5 12.59V8a7 7 0 0 1 14 0v4.59l1.71 1.7A1 1 0 0 1 21 15Zm-2 .41-1.71-1.7A1 1 0 0 1 17 13V8A5 5 0 0 0 7 8v5a1 1 0 0 1-.29.71L5 15.41V17h14Z';
-
-	let count = 0;
-
-	const inc = () => {
-		setTimeout(() => {
-			count++;
-			inc();
-		}, 1000);
-	};
-
-	onMount(() => {
-		inc();
-	});
 </script>
 
 <section
 	class="relative flex justify-center items-center w-screen h-screen bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400"
 >
-	<div class="absolute top-4 left-4">{isActive} {count}</div>
 	<button
 		class="grid group relative"
 		type="button"
