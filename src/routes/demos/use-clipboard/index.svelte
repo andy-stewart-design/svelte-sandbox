@@ -25,6 +25,7 @@
 <section
 	class="relative flex justify-center items-center w-screen h-screen bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400"
 >
+	<div class="absolute top-4 left-4">{isActive}</div>
 	<button
 		class="grid group relative"
 		type="button"
